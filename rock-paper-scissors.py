@@ -9,5 +9,5 @@ print(computerMove)
 keepPlaying = True
 while (keepPlaying):
     #Select a move 
-    userMove = input("Select a move: r, p, s: ")
+    userMove = input("Select a move: r for Rock, p for Paper, s for Scissors: ")
     print(userMove)
