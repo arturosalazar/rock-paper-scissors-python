@@ -11,3 +11,8 @@ while (keepPlaying):
     #Select a move 
     userMove = input("Select a move: r for Rock, p for Paper, s for Scissors: ")
     print(userMove)
+
+    #Convert move to avoid formatting problems
+    userMove = userMove.lower() #make lowercase
+    userMove = "".join(userMove.split()) #remove all whitespace
+    print(userMove)
