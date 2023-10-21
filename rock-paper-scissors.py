@@ -18,8 +18,7 @@ while (keepPlaying):
     print(userMove)
 
     #Check user input
-    if(userMove != "r" and userMove != "p" and userMove != "s"):
+    if userMove not in ["r", "p", "s"]:
         print("Incorrect Selection, try again")
         continue
 
-    
