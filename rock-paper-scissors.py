@@ -48,3 +48,17 @@ while (keepPlaying):
             print(f"You win! {userMove} cuts {computerMove}")
         elif computerMove == "Rock":
             print(f"Computer wins! {computerMove} smashes {userMove}")
+
+    #Check if players wants to play again
+    playAgain = ""
+    while playAgain not in ["y", "n", "yes", "no"]:
+        playAgain = input("Would you like to play again? y/n ")
+        #Convert move to avoid formatting problems
+        playAgain = playAgain.lower() #make lowercase
+        playAgain = "".join(playAgain.split()) #remove all whitespace
+        if playAgain == "y" or playAgain == "yes":
+            break
+        elif playAgain == "n" or playAgain == "no":
+            keepPlaying = False
+            break
+        print("Incorrect Selection, try again")
