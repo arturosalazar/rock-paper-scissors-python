@@ -6,8 +6,6 @@ while (keepPlaying):
     #Randomly select 
     computerPossibleMoves = ("Rock", "Paper", "Scissors")
     computerMove = computerPossibleMoves[randint(0,2)]
-    #Test - select specific computerMove
-    computerMove = "Scissors"
 
     #Select a move 
     userMove = input("Select a move: Rock, Paper, Scissors: ")
