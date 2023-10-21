@@ -9,13 +9,11 @@ while (keepPlaying):
 
     #Select a move 
     userMove = input("Select a move: Rock, Paper, Scissors: ")
-    print(userMove)
 
     #Convert move to avoid formatting problems
     userMove = userMove.lower() #make lowercase
     userMove = userMove.title() #capitalize first letter
     userMove = "".join(userMove.split()) #remove all whitespace
-    print(userMove)
 
     #Check user input
     if userMove not in ["Rock", "Paper", "Scissors"]:
