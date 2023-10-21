@@ -16,3 +16,10 @@ while (keepPlaying):
     userMove = userMove.lower() #make lowercase
     userMove = "".join(userMove.split()) #remove all whitespace
     print(userMove)
+
+    #Check user input
+    if(userMove != "r" and userMove != "p" and userMove != "s"):
+        print("Incorrect Selection, try again")
+        continue
+
+    
