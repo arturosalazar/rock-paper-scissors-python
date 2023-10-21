@@ -6,7 +6,6 @@ while (keepPlaying):
     #Randomly select 
     computerPossibleMoves = ("Rock", "Paper", "Scissors")
     computerMove = computerPossibleMoves[randint(0,2)]
-    print(computerMove)
 
     #Select a move 
     userMove = input("Select a move: Rock, Paper, Scissors: ")
@@ -25,5 +24,4 @@ while (keepPlaying):
 
     print("Computer selected: " + computerMove.title())
     print("User selected: " + userMove.title())
-
     
