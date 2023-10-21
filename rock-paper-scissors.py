@@ -9,7 +9,7 @@ print(computerMove)
 keepPlaying = True
 while (keepPlaying):
     #Select a move 
-    userMove = input("Select a move: r for Rock, p for Paper, s for Scissors: ")
+    userMove = input("Select a move: rock, paper, scissors: ")
     print(userMove)
 
     #Convert move to avoid formatting problems
@@ -18,7 +18,8 @@ while (keepPlaying):
     print(userMove)
 
     #Check user input
-    if userMove not in ["r", "p", "s"]:
+    if userMove not in ["rock", "paper", "scissors"]:
         print("Incorrect Selection, try again")
         continue
 
+    
