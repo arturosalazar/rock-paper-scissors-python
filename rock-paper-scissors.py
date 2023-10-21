@@ -1,13 +1,13 @@
 from random import randint
 
-#Randomly select 
-computerPossibleMoves = ("Rock", "Paper", "Scissors")
-computerMove = computerPossibleMoves[randint(0,2)]
-print(computerMove)
-
 #Game Start Loop
 keepPlaying = True
 while (keepPlaying):
+    #Randomly select 
+    computerPossibleMoves = ("Rock", "Paper", "Scissors")
+    computerMove = computerPossibleMoves[randint(0,2)]
+    print(computerMove)
+
     #Select a move 
     userMove = input("Select a move: Rock, Paper, Scissors: ")
     print(userMove)
